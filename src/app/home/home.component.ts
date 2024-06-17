@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { gsap } from 'gsap';
 import { TextPlugin } from 'gsap/TextPlugin';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
-gsap.registerPlugin(TextPlugin);
+gsap.registerPlugin(TextPlugin, ScrollTrigger);
 @Component({
   selector: 'app-home',
   standalone: true,
@@ -13,11 +14,17 @@ gsap.registerPlugin(TextPlugin);
 export class HomeComponent implements OnInit {
   ngOnInit() {
     gsap.from('.box', {
-      opacity: 0,
-      scale: 0.5,
-      duration: 1,
+      x: 10,
       stagger: 0.2,
-      ease: 'sine.in',
+      scrollTrigger: {
+        trigger: '.box',
+        start: 'top 80%',
+        end: 'bottom 60%',
+        scrub: true,
+      },
+      opacity: 0,
+    ease: 'power1.inOut',
+      duration: 2,
      
     });
     gsap.from('path', {
