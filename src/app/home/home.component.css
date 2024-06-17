@@ -6,6 +6,14 @@
     background-position: center;
     background-repeat: no-repeat;
   }
+  .container-md{
+    height: 500px;
+    background-image: url('../../../public/pngwing\ 2.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; /* Center the background image */
+
+  }
   svg{
     width: 80%;
   }
@@ -80,8 +88,14 @@
       transform: translateY(-5px);
     }
   }
-  
+  #rd{
+    margin-top: 60px;
+
+  }
   @media (max-width: 500px) {
+    #rd{
+      margin-top: auto;
+    }
     .text-container {
       gap: 3px; 
     }
