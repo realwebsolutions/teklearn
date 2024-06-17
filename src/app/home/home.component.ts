@@ -21,7 +21,7 @@ export class HomeComponent implements OnInit {
         start: 'top 90%',
         end: 'bottom 40%',
         scrub: true,
-        markers: true
+        // markers: true
       },
       opacity: 0,
     ease: 'power1.inOut',
