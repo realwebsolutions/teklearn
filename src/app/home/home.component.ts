@@ -29,6 +29,8 @@ export class HomeComponent implements OnInit {
     });
     gsap.from('path', {
       opacity: 0,
+      repeat: -1,
+      yoyo: true,
       strokeDasharray: 1000,
       strokeDashoffset: 1000,
       duration: 2  ,
@@ -49,8 +51,10 @@ export class HomeComponent implements OnInit {
   
     // Animate the white shapes
     gsap.from('path[fill="white"]', {
+      // repeat: -1,
+      // yoyo: true,
       opacity: 0,
-      duration: 1,
+      duration: 2,
       ease: 'back.inOut',
       stagger: 0.2
     });
