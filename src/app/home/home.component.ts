@@ -18,9 +18,10 @@ export class HomeComponent implements OnInit {
       stagger: 0.2,
       scrollTrigger: {
         trigger: '.box',
-        start: 'top 80%',
-        end: 'bottom 60%',
+        start: 'top 90%',
+        end: 'bottom 40%',
         scrub: true,
+        markers: true
       },
       opacity: 0,
     ease: 'power1.inOut',

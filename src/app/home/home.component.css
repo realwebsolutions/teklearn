@@ -22,13 +22,9 @@
     width: 80%;
   }
   .box {
-    border: 4px solid; /* Border width */
-    border-radius: 1px;
     margin-bottom: 20px;
     overflow: hidden;
-    border-image-source: linear-gradient(180deg, #FFFFFF 0%, #FF0000 100%);
-    border-image-slice: 1;
-    background: linear-gradient(104.43deg, #101010 7.76%, #626262 48.32%, #262626 95.93%);
+    
     font-family: "Carter One", system-ui;
     font-weight: 400;
     font-style: normal;
