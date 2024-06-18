@@ -1,0 +1,36 @@
+.aboutus-container {
+    background-color: #020513; /* Dark background color */
+    color: white; /* White text color */
+    padding: 2rem;
+    font-family: 'Timmana', sans-serif;
+    font-weight: 400;
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+ 
+  .aboutus-container h2 {
+    font-family: 'Timmana', sans-serif;
+  }
+  
+  .aboutus-container p {
+   
+    line-height: 1.6;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .mt-4 {
+    margin-top: 1.5rem;
+  }
+  
+  .mb-4 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .p-5 {
+    padding: 3rem;
+  }
+  

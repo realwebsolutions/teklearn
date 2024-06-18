@@ -16,6 +16,14 @@
 
 
   }
+  #robo{
+    height: 600px;
+    width: auto;
+    background-image: url('../../../public/robo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left; 
+  }
   svg{
     margin: 0 auto;
 
@@ -112,7 +120,7 @@
   }
   .box{
     font-size: 12px;
-    width: 200px;
+    /* width: 200px; */
   }
   h2{
 font-size: 16px

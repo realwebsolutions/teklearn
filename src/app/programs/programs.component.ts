@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { gsap } from 'gsap';
 
 @Component({
@@ -12,7 +13,7 @@ export class ProgramsComponent implements OnInit {
   ngOnInit() {
     gsap.from('.card', {
       opacity: 0,
-      borderRadius: '50%',
+      borderRadius: '30%',
       duration: 2  ,
       ease: 'back.inOut',
       stagger: 0.2,
@@ -35,5 +36,11 @@ export class ProgramsComponent implements OnInit {
       stagger: 0.2,
       
     });
+  }
+
+  constructor(private router: Router) {}
+
+  workshop() {
+    this.router.navigate(['/workshop']);
   }
 }

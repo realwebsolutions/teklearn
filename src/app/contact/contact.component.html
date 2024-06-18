@@ -1,1 +1,27 @@
-<p>contact works!</p>
+<div class="contactus-container vh-100 d-flex align-items-center justify-content-center bg-overlay">
+    <div class="card shadow p-4 ">
+      <h1 class="text-center">Contact us</h1>
+      <form [formGroup]="messageform" (ngSubmit)="sendmessage(messageform.value)">
+        <div class="row">
+        <div class="mb-3 col-md">
+          <label for="firstName" class="form-label">First name</label>
+          <input type="text" class="form-control" id="firstName" placeholder="Jane" formControlName="firstname">
+        </div>
+        <div class="mb-3 col-md">
+          <label for="lastName" class="form-label">Last name</label>
+          <input type="text" class="form-control" id="lastName" placeholder="Smitherton" formControlName="firstname" formControlName="lastname">
+        </div>
+    </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="email@yourdomain.net" formControlName="email">
+        </div>
+        <div class="mb-3">
+          <label for="message" class="form-label">Your message</label>
+          <textarea class="form-control" id="message" rows="3" placeholder="Enter your question or message" formControlName="message"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark w-100">Submit</button>
+      </form>
+    </div>
+  </div>
+  
