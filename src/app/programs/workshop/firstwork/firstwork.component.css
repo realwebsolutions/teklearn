@@ -1,0 +1,19 @@
+.text-bold{
+    font-weight: bold;
+    color: red;
+}
+.cards{
+    width: 300px;
+  
+  }
+  .card-img-top {
+    border-radius: 15px;
+    padding: 10px;
+margin-top: 5rem;
+  }
+  
+  @media (max-width: 500px) {
+    .cards{
+        width: auto;
+    }
+    }
